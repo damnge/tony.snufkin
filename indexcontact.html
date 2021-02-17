@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Tony Snufkin</title>
+		<link rel="icon" type="image/png" href="eye1.png">
+		<link rel="stylesheet" href="css/stylecontact.css">
+		<link rel="stylesheet" type="text/css" href="css/modal.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	  </head>
+<body>
+	<section class="page-container" id="page-container">
+		<div class="header" id="header">
+			<a href="index.html">
+				<img  class="logo animate__animated animate__fadeIn" src="LOGO.svg">
+			</a>
+			<div class="back"> 
+				<a class="back" href="index.html">
+				<i class="fas fa-undo-alt"></i>
+				</a>
+			</div>
+		</div>
+		<section class="form-container" id="form-container">
+		<h1 class="contact-title">let's get in touch.</h1>
+	
+		
+		<form class="contact-form" name="myForm" action="https://formspree.io/f/mdopjdej" method="POST" id="my-form" onsubmit="validate(); validateEmail();">
+			<label for="name">Name</label>
+			<input type="text" name="name" id="name" class="input-name" placeholder="">
+			<label for="mail">Email</label>
+			<input type="email" name="mail" id="Email" placeholder="">
+			<label for="message">Message</label>
+			<textarea name="message" id="message" placeholder=""></textarea>
+			<div id="status" class="animate__animated animate__fadeIn animate__delay-2s"></div>
+			<div class="center-btn">
+			<button class="btn-send"  type="submit" value="Send" name="submit">Send</button>
+		</div>
+		</form>
+	
+	</section>
+		
+	<footer class="footer">
+		<a class="insta" href="https://www.instagram.com/tonysnufkin/"><i class="fab fa-instagram"></i></a>
+		<p class="sign">©Tony Snufkin<p></div>	
+	</div>
+
+
+<div class="loader" id="loader">
+      <img src="loader2.svg" alt="loading">
+	</div>
+	
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+<script src="javascripts/loader.js"></script>
+<script src="javascripts/form-sub.js"></script>
+</body>
+</html>

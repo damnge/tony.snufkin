@@ -1,0 +1,247 @@
+
+*{
+  box-sizing: border-box;
+}
+  body {
+    margin:0;
+    font-family:Arial}
+
+  /*-----------SIDEBAR-----------*/
+  .sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sidebar #myLinks {
+  display: block;
+}
+
+ 
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: black;
+  padding:16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0 auto;
+  display: block;
+
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #f9f9f9;
+  min-width: 160px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.sidebar a:hover, .dropdown:hover .dropbtn {
+  color: gray;
+}
+ 
+ .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content button{
+  border:transparent;
+  cursor: pointer;
+  background-color: #f9f9f9;
+
+}
+
+/*-----------CONTENT WRAPPER-------------*/
+div.content {
+  margin-left: 200px;
+  padding: 10px 16px;
+  height: 100%;
+}
+
+/*-------GALLERY--------*/
+
+#gallery-container{
+    margin:80px;
+}
+
+.row {
+  height:800px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  padding: 8px;
+  width:100%;
+
+}
+/*-------- FILTER -------*/
+/*$item-width: 100px;*/
+
+.grid, .grid-item {
+    width: 200px;
+    /*transition: 1s;*/
+    
+  }
+
+/*.grid-sizer {
+  width:200px;
+}*/
+
+
+
+/*----------MOBILE MEDIA--------------*/
+
+@media screen and (max-width: 600px) {
+  
+div.content {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+  .sidebar {
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+  width: 100%;
+  height:auto;
+}
+
+.sidebar #myLinks {
+  display: none;
+}
+
+.sidebar a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  text-align: center;
+}
+
+
+.sidebar .cross {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background: white;
+  }
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+.logo {
+    text-align: left;
+
+}
+
+.dropdown,.dropdown-content {
+  text-align: center;
+}
+
+
+.sidebar a:hover {
+  background-color: white;
+  color: black;
+}
+
+.active {
+  background-color: white;
+  color: gray;
+}
+
+}
+
+
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+#gallery-container{
+    margin:0px;
+    padding:5px;
+}
+
+}
+
+/*------ANIMATION WHEN SCROLL --------*/
+
+/*.inline-photo {
+ opacity: 0;
+  transform: translateY(5vh);
+  visibility: hidden;
+  transition: opacity 0.5s, transform 1s;
+  will-change: opacity, visibility;
+}*/
+
+.inline-photo.is-visible {
+  /*opacity: 1;*/
+  transform: none;
+  visibility: visible;
+   animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1.5s; /* don't forget to set a duration! */
+}
+

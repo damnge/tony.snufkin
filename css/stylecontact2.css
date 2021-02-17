@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  position: relative;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  min-width: 300px;
+  background-color: white;
+  letter-spacing: 1px;
+}
+
+#page-container {
+  min-height: 100vh;
+  /* will cover the 100% of viewport */
+  display: block;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+#header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  font-family: "Poiret One", cursive;
+  overflow: visible;
+  top: 0;
+}
+
+.logo {
+  padding-right: 70px;
+  margin: 45px;
+}
+
+.back {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  right: 25px;
+  top: 21px;
+  text-decoration: none;
+  color: #333;
+  font-size: 24px;
+}
+
+.back:hover {
+  color: #e60000;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+#form-container {
+  background-color: #fff;
+  margin: 0 auto;
+  width: 500px;
+}
+
+.contact-title {
+  text-align: center;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+  background-color: #333;
+  color: white;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  padding: 20px 0;
+  -webkit-box-shadow: 0.25rem 0.25rem rgba(173, 171, 171, 0.65);
+          box-shadow: 0.25rem 0.25rem rgba(173, 171, 171, 0.65);
+}
+
+.paragraph {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 0 25px;
+  margin: 40px 0;
+  color: #333;
+}
+
+.contact-form {
+  display: block;
+  width: 400px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: 0;
+}
+
+label {
+  font-size: 18px;
+  padding: 10px;
+  color: #535353;
+}
+
+input[type=text], input[type=email], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 0.5px solid #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  resize: vertical;
+  font-size: 20px;
+}
+
+textarea {
+  height: 150px;
+}
+
+.center-btn {
+  text-align: right;
+}
+
+.btn-send {
+  cursor: pointer;
+  font-size: 18px;
+  height: 2.5 rem;
+  border: none;
+  color: #fff;
+  outline: none;
+  padding: 10px 35px;
+  background: #333;
+  -webkit-box-shadow: 0.25rem 0.25rem rgba(173, 171, 171, 0.65);
+          box-shadow: 0.25rem 0.25rem rgba(173, 171, 171, 0.65);
+  margin-bottom: 50px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.btn-send:hover {
+  background-color: lightgray;
+  color: white;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+.btn-send:active {
+  -webkit-transform: translate(0, 0.3rem);
+          transform: translate(0, 0.3rem);
+  -webkit-box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+          box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+#status {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#status.correct {
+  background-color: #2ea44f;
+  -webkit-animation: status 3s ease forwards;
+          animation: status 3s ease forwards;
+  color: white;
+  font-weight: bold;
+}
+
+#status.wrong {
+  background-color: #e73617;
+  color: white;
+  -webkit-animation: status 3s ease forwards;
+          animation: status 3s ease forwards;
+  font-weight: bold;
+}
+
+@-webkit-keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.footer {
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.insta {
+  font-size: 30px;
+  padding-left: 2px;
+  font-weight: bold;
+  color: #4d4d4d;
+}
+
+.insta:hover {
+  color: lightgray;
+}
+
+.sign {
+  font-size: 18px;
+  color: #4d4d4d;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+}
+
+.loader img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  /* doesn't matter what size of the page it always keep it in the center */
+}
+
+@media screen and (max-width: 350px) {
+  body {
+    margin: 0 auto;
+  }
+  #form-container {
+    margin: 0 auto;
+    max-width: 300px;
+  }
+  .contact-title {
+    font-size: 26px;
+  }
+  .paragraph {
+    font-size: 20px;
+    padding: 0 20px;
+    margin: 40px 0;
+  }
+  .contact-form {
+    margin: 0 auto;
+    max-width: 260px;
+    margin-bottom: 50px;
+  }
+  #header {
+    height: 50px;
+  }
+  .logo {
+    display: block;
+    margin: 0 auto;
+    padding-right: 0;
+    margin-top: 35px;
+  }
+  .back {
+    top: 5px;
+    right: 5px;
+    font-size: 15px;
+    display: none;
+  }
+  label {
+    font-size: 18px;
+  }
+  .center-btn {
+    text-align: center;
+  }
+  .btn-send {
+    width: 100%;
+  }
+  #status {
+    width: 260px;
+  }
+  .footer {
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+    padding-top: 0px;
+  }
+  .sign {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 600px) {
+  .back {
+    right: 10px;
+    top: 22px;
+    font-size: 24px;
+    display: none;
+  }
+  #header {
+    height: 50px;
+  }
+  .logo {
+    display: block;
+    margin: 0 auto;
+    padding-right: 0;
+    margin-top: 45px;
+  }
+  #form-container {
+    margin: 0 auto;
+    max-width: 340px;
+  }
+  .contact-form {
+    width: 310px;
+    margin: 0 auto;
+  }
+  .contact-title {
+    font-size: 28px;
+  }
+  .paragraph {
+    font-size: 22px;
+    padding: 0 20px;
+  }
+  label {
+    font-size: 18px;
+  }
+  .btn-send {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=stylecontact2.css.map */
