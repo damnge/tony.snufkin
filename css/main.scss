@@ -142,6 +142,7 @@ $font-header: 'Montserrat', sans-serif;
   
   .sidebar a:hover {
     color: lightgray;
+    transition:ease-out 0.2s;
   }
 
 
@@ -154,6 +155,7 @@ $font-header: 'Montserrat', sans-serif;
 
   .dropdown-content button:hover {
     color:#333;
+    transition:ease-out 0.2s;
   }
 
   .dropdown-content button:focus {
@@ -315,7 +317,7 @@ $font-header: 'Montserrat', sans-serif;
   }
 
   .entrance{
-    max-height: 809px;
+    max-height: 806px;
   }
   
   .row {
@@ -342,13 +344,25 @@ $font-header: 'Montserrat', sans-serif;
     vertical-align: middle;
     padding: 12px;
     width:100%;
+    transition: all .4s ease-in-out; 
   }
+  .column-landscape img:hover {
+    transition: all .4s ease-in-out;
+    opacity:0.8 ; 
+   }
   
   
   .column img {
     vertical-align: middle;
     padding: 12px;
     width:100%;
+    transition: all .4s ease-in-out; 
+  }
+
+ .column img:hover {
+  //  transform: scale(1.05);
+   transition: all .4s ease-in-out;
+   opacity:0.9 ; 
   }
 
   .block {

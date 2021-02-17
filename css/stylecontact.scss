@@ -57,13 +57,24 @@ body {
     top: 21px;
     text-decoration:none;
     color: #333;
-    font-size: 24px;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
-    .back:hover{
-        color: lightgray;;
-       transition: 250ms;
+
+    .back:after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 0;
+        background: transparent;
+        transition: width .5s ease, background-color .5s ease;
     }
+
+    .back:hover:after {
+        width: 100%;
+        background: #333;
+        }
  
 #form-container {
     background-color: #fff;
@@ -125,8 +136,8 @@ input:focus, textarea:focus, select:focus {
     margin-top: 5px;
     margin-bottom: 15px;
      resize: vertical;
-     font-size: 20px;
-     
+     font-size: 16px;
+     font-family:$font-header;
 }
 
 textarea {
@@ -146,7 +157,6 @@ textarea {
     outline:none;
     padding: 10px 35px;
     background: #333;
-    box-shadow: 0.20rem 0.25rem rgba(173, 171, 171, 0.65);
     margin-bottom: 50px;
     text-align: center;
     font-size: 14px;
@@ -224,6 +234,7 @@ textarea {
 
   .insta:hover{
      color: lightgray;
+     transition:ease-out 0.2s;
   }
 
 .sign {
