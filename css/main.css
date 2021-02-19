@@ -560,6 +560,12 @@ img {
   }
 }
 
+@media (max-width: 800px) {
+  .navbar {
+    max-height: 105px;
+  }
+}
+
 .loader {
   position: fixed;
   top: 0;

@@ -569,6 +569,8 @@ $font-header: 'Montserrat', sans-serif;
       margin: 0 auto;
     }
 
+
+
   }
   @media (max-width: 280px){
     .main-logo{
@@ -591,7 +593,13 @@ $font-header: 'Montserrat', sans-serif;
       right: 25px; 
     }
   }
- 
+
+  @media (max-width: 800px){
+  .navbar {
+    max-height:105px;
+  }
+
+}
 
 // LOADER
 
