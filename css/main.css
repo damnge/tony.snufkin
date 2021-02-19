@@ -27,7 +27,7 @@ body {
   top: 0;
   width: 100%;
   z-index: 1;
-  max-height: 105px;
+  max-height: 125px;
 }
 
 .main-logo {
@@ -101,7 +101,7 @@ label {
   outline: none;
   color: #333;
   display: block;
-  margin-top: 145px;
+  margin-top: 115px;
   padding: 10px 0px 10px 0;
   text-transform: uppercase;
   font-weight: bold;
@@ -151,7 +151,7 @@ label {
 
 .dropdown-content button:focus {
   outline: none;
-  color: #333;
+  color: #686868;
   font-weight: bold;
 }
 
@@ -160,12 +160,23 @@ label {
   padding-left: 10px;
 }
 
-.fadeit {
-  -webkit-animation: fadeInDown;
-          animation: fadeInDown;
-  /* referring directly to the animation's @keyframe declaration */
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+.inline-photo {
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: opacity 0.4s 0.45s ease-out, -webkit-transform 5s 0.45s cubic-bezier(0, 1, 0.3, 1);
+  transition: opacity 0.4s 0.45s ease-out, -webkit-transform 5s 0.45s cubic-bezier(0, 1, 0.3, 1);
+  transition: transform 5s 0.45s cubic-bezier(0, 1, 0.3, 1), opacity 0.4s 0.45s ease-out;
+  transition: transform 5s 0.45s cubic-bezier(0, 1, 0.3, 1), opacity 0.4s 0.45s ease-out, -webkit-transform 5s 0.45s cubic-bezier(0, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+
+.inline-photo.is-visible {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 #nav-icon3 {
@@ -366,10 +377,11 @@ img {
   padding: 0 50px 0 30px;
   margin: 15px;
   line-height: 30px;
+  margin-bottom: 45px;
 }
 
 #dtitle {
-  padding-top: 15px;
+  padding-top: 20px;
 }
 
 #description {
@@ -499,7 +511,7 @@ img {
   }
   #dtitle {
     font-size: 24px;
-    padding-top: 0;
+    padding-top: 25px;
   }
   #description {
     font-size: 16px;

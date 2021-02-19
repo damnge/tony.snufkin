@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tony Snufkin</title>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/modal.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+<link rel="icon" type="image/png" href="ts.png">
+</head>
+<body>
+  
+<section id="page-container">
+    <header class="navbar">
+        <a href="index">
+          <img src="LOGO.svg" href alt="logo" class="main-logo animate__animated animate__fadeIn">
+        </a>
+    
+        <label class="nav animate__animated animate__fadeIn" for="toggle">
+          <div id="nav-icon3">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+          <input type="checkbox" id="toggle">
+          <div class="menu dropdown-content button-group filter-button-group">
+          <p class="portfolio">Portfolio</p>
+          <a href="index"><button id="myBtn1">Street</button></a>
+          <button class="my-analog" id="myBtn6">Film</button>
+          <div class="dropdown-content analog-drop animate__animated animate__fadeInLeft animate__delay-0.1s">
+            <a href="iceland"><button class="bt2" style="color: rgb(104, 104, 104); font-weight:bold;">ICELAND</button></a>
+            <a href="australia"><button class="bt1">AUSTRALIA</button></a>
+            <a href="ukraine"><button class="bt3">UKRAINE</button></a>
+          </div>
+          <a href="reportage"><button id="myBtn8">Reportage</button></a>
+          <a href="all"><button id="myBtn5">All Photos</button></a>
+          <a href="contact" class="contact-link">Contact</a>
+          <a class="insta" href="https://www.instagram.com/tonysnufkin/"><i class="fab fa-instagram"></i></a>
+          </div>
+        </label>
+    
+    </header>
+    
+    <nav class="sidebar" id="myTopnav">
+     <div id="myLinks">
+      
+        <button class="dropbtn-portfolio">Portfolio</button>
+        <div class="dropdown-content button-group filter-button-group">
+          <a href="index"><button id="myBtn1">Street</button></a>
+          <a><button id="myBtn3" class="my-analog">Film</button></a>
+          <div class="dropdown-content analog-drop animate__animated animate__fadeInLeft animate__delay-0.1s">
+            <a href="iceland"><button id="myBtn3" class="bt2" style="color: rgb(104, 104, 104); font-weight:bold;">ICELAND</button></a>
+            <a href="australia"><button id="myBtn3" class="bt1" >AUSTRALIA</button></a>
+            <a href="ukraine"><button id="myBtn3" class="bt3">UKRAINE</button></a>
+          </div>
+          <a href="reportage"><button id="myBtn4">Reportage</button></a>
+          <a href="all"><button id="myBtn5">All Photos</button></a>
+        </div>
+      
+    <a href="contact" class="contact-link">Contact</a>
+    <a class="insta" href="https://www.instagram.com/tonysnufkin/"><i class="fab fa-instagram"></i></a>
+    
+    </div>
+      
+      </nav>
+    
+  <div class="sign"><p>©Tony Snufkin</p></div>
+
+  <section id="content"> 
+  
+    <div id="gallery-container">
+         
+  
+  <div class="row">  <!-- this gallery is made with flex and 4 rows -->
+   
+   <!-- ------------ STREET ------------- -->
+   <!-- 1 -->
+
+  <!-- this gallery is made with flex and 2 rows -->
+  <!-- ------------ ANALOG  ------------- -->
+
+<!-- --------- ICELAND------ -->
+<!-- ---- 1 COLUMN ----- -->
+  <div class="column-landscape grid">
+    <img src="img/i1.jpg" class="grid-item analog isk show-on-scroll inline-photo" onclick="openModal();currentSlide(50)">
+    <img src="img/i3.jpg" class="grid-item analog isk show-on-scroll inline-photo" onclick="openModal();currentSlide(52)">
+    <img src="img/i5.jpg" class="grid-item analog isk show-on-scroll inline-photo" onclick="openModal();currentSlide(54)">
+    <img src="img/i40.jpg" class="grid-item analog isk show-on-scroll inline-photo" onclick="openModal();currentSlide(56)">
+    <img src="img/i70.jpg" class="grid-item analog isk show-on-scroll inline-photo" onclick="openModal();currentSlide(58)">
+    <img src="img/i7.jpg" class="grid-item analog isk show-on-scroll inline-photo" onclick="openModal();currentSlide(60)">
+    <img src="img/i100.jpg" class="grid-item analog isk show-on-scroll inline-photo" onclick="openModal();currentSlide(62)">
+    <img src="img/i11.jpg" class="grid-item analog isk show-on-scroll inline-photo" onclick="openModal();currentSlide(64)">
+    <img src="img/i13.jpg" class="grid-item analog isk show-on-scroll inline-photo" onclick="openModal();currentSlide(66)">
+    <img src="img/i15.jpg" class="grid-item analog isk show-on-scroll inline-photo" onclick="openModal();currentSlide(68)">
+    <img src="img/i17.jpg" class="grid-item analog isk show-on-scroll inline-photo" onclick="openModal();currentSlide(70)">
+    <img src="img/i21.jpg" class="grid-item analog isk show-on-scroll inline-photo" onclick="openModal();currentSlide(72)">
+  </div> 
+  
+  <!-- -----2----- -->
+
+  <div class="column-landscape grid">
+    <img src="img/i2.jpg" class="grid-item analog isk show-on-scroll inline-photo" onclick="openModal();currentSlide(51)">
+    <img src="img/i4.jpg" class="grid-item analog isk show-on-scroll inline-photo" onclick="openModal();currentSlide(53)">
+    <img src="img/i6.jpg" class="grid-item analog isk show-on-scroll inline-photo" onclick="openModal();currentSlide(55)">
+    <img src="img/i50.jpg" class="grid-item analog isk show-on-scroll inline-photo" onclick="openModal();currentSlide(57)">
+    <img src="img/i80.jpg" class="grid-item analog isk show-on-scroll inline-photo" onclick="openModal();currentSlide(59)">
+    <img src="img/i8.jpg" class="grid-item analog isk show-on-scroll inline-photo" onclick="openModal();currentSlide(61)">
+    <img src="img/i10.jpg" class="grid-item analog isk show-on-scroll inline-photo" onclick="openModal();currentSlide(63)">
+    <img src="img/i12-min.JPG" class="grid-item analog isk show-on-scroll inline-photo" onclick="openModal();currentSlide(65)">
+    <img src="img/i14.jpg" class="grid-item analog isk show-on-scroll inline-photo" onclick="openModal();currentSlide(67)">
+    <img src="img/i16.jpg" class="grid-item analog isk show-on-scroll inline-photo" onclick="openModal();currentSlide(69)">
+    <img src="img/i18.jpg" class="grid-item analog isk show-on-scroll inline-photo" onclick="openModal();currentSlide(71)">
+    <img src="img/i22.jpg" class="grid-item analog isk show-on-scroll inline-photo" onclick="openModal();currentSlide(73)">
+  </div> 
+
+   
+  </div>    <!-- <---- closing div of the row -->
+
+  
+  </div>       <!-- --------- closing div of gallery-container -->
+
+</section> <!-- closing content div -->
+
+  
+  <footer class="footer">
+	<div class="info">
+  <p class="copy">©Tony Snufkin</p>
+  </div>
+  </footer>
+
+</section>
+
+
+
+<div id="myModal" class="modal">
+  <a class="close cursor" onclick="closeModal()">CLOSE</a>
+  <div class="modal-content">
+    
+  <!-- -------ANALOG------- -->
+  <!-- -----AUSTRALIA----- -->
+
+
+<!-- -----ICELAND----- -->
+<div class="mySlides landscape">
+  <img src="img/i1.jpg">
+</div>
+<div class="mySlides landscape">
+  <img src="img/i2.jpg">
+</div>
+<div class="mySlides landscape">
+  <img src="img/i3.jpg">
+</div>
+<div class="mySlides landscape">
+  <img src="img/i4.jpg">
+</div>
+<div class="mySlides landscape">
+  <img src="img/i5.jpg">
+</div>
+<div class="mySlides landscape">
+  <img src="img/i6.jpg">
+</div>
+<div class="mySlides landscape">
+  <img src="img/i40.jpg">
+</div>
+<div class="mySlides landscape">
+  <img src="img/i50.jpg">
+</div>
+<div class="mySlides landscape">
+  <img src="img/i70.jpg">
+</div>
+<div class="mySlides landscape">
+  <img src="img/i80.jpg">
+</div>
+<div class="mySlides landscape">
+  <img src="img/i7.jpg">
+</div>
+<div class="mySlides landscape">
+  <img src="img/i8.jpg">
+</div>
+<div class="mySlides landscape">
+  <img src="img/i100.jpg">
+</div>
+<div class="mySlides landscape">
+  <img src="img/i10.jpg">
+</div>
+<div class="mySlides landscape">
+  <img src="img/i11.jpg">
+</div>
+<div class="mySlides landscape">
+  <img src="img/i12.JPG">
+</div>
+<div class="mySlides landscape">
+  <img src="img/i13.jpg">
+</div>
+<div class="mySlides landscape">
+  <img src="img/i14.jpg">
+</div>
+<div class="mySlides landscape">
+  <img src="img/i15.jpg">
+</div>
+<div class="mySlides landscape">
+  <img src="img/i16.jpg">
+</div>
+<div class="mySlides landscape">
+  <img src="img/i17.jpg">
+</div>
+<div class="mySlides landscape">
+  <img src="img/i18.jpg">
+</div>
+<div class="mySlides landscape">
+  <img src="img/i21.jpg">
+</div>
+<div class="mySlides landscape">
+  <img src="img/i22.jpg">
+</div>
+
+</div>
+
+    <div class="slider">
+    <a class="prev" onclick="plusSlides(-1)" onkeypress(37)="">Prev</a>
+    <p>/</p>
+    <a class="next" onclick="plusSlides(1)">Next</a>
+    </div>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    </div>
+</div>
+
+    <div class="loader" id="loader">
+      <img src="loader2.svg" alt="loading">
+    </div>
+
+    <script>
+
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.3/isotope.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/js/lightbox.min.js"></script>
+<script src="javascripts/scroll-starts-top.js"></script>
+<script src="javascripts/arrow-keys.js"></script>
+<script src="javascripts/drop-down.js"></script>
+<script src="javascripts/loader.js"></script>
+<script src="javascripts/modal.js"></script>
+<script src="javascripts/hamburger.js"></script>
+<script src="javascripts/show-on-scroll.js"></script>
+</body>
+</html>
