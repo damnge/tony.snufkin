@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -158,25 +157,6 @@ label {
 .analog-drop {
   display: none;
   padding-left: 10px;
-}
-
-.inline-photo {
-  opacity: 0;
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-  -webkit-transition: opacity 0.4s 0.45s ease-out, -webkit-transform 5s 0.45s cubic-bezier(0, 1, 0.3, 1);
-  transition: opacity 0.4s 0.45s ease-out, -webkit-transform 5s 0.45s cubic-bezier(0, 1, 0.3, 1);
-  transition: transform 5s 0.45s cubic-bezier(0, 1, 0.3, 1), opacity 0.4s 0.45s ease-out;
-  transition: transform 5s 0.45s cubic-bezier(0, 1, 0.3, 1), opacity 0.4s 0.45s ease-out, -webkit-transform 5s 0.45s cubic-bezier(0, 1, 0.3, 1);
-  will-change: transform, opacity;
-}
-
-.inline-photo.is-visible {
-  opacity: 1;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
 #nav-icon3 {
@@ -364,14 +344,6 @@ img {
   opacity: 0.9;
 }
 
-.block {
-  display: block;
-  height: 390px;
-  color: red;
-  vertical-align: middle;
-  padding: 12px;
-}
-
 #myTitle {
   width: 60%;
   padding: 0 50px 0 30px;
@@ -422,11 +394,6 @@ img {
 
 .copy {
   margin-top: 5px;
-}
-
-/*-------- FILTER -------*/
-.grid, .grid-item {
-  width: 200px;
 }
 
 /*----------MOBILE MEDIA--------------*/

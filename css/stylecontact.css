@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -91,20 +90,9 @@ body {
   text-align: center;
 }
 
-.paragraph {
-  font-family: "Montserrat", sans-serif;
-  font-size: 24px;
-  text-align: center;
-  margin-bottom: 50px;
-  padding: 0 25px;
-  margin: 40px 0;
-  color: #333;
-}
-
 .contact-form {
   display: block;
   width: 400px;
-  font-family: "Lato", sans-serif;
   margin: 0 auto;
 }
 
