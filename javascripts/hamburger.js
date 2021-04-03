@@ -20,8 +20,9 @@ var links = document.querySelectorAll('.menu a');
     $(document).ready(function(){
 	$('#nav-icon3').click(function(){
 		$(this).toggleClass('open');
-      $('.menu a').click(function() {
+      $('.menu').click(function() {
        $('#nav-icon3').removeClass('open');
     });
 	});
 });
+

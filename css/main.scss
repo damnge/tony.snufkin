@@ -6,13 +6,14 @@ $font-header: 'Montserrat', sans-serif;
 *{
     box-sizing: border-box;
   }
-    body {
+    body,html {
       margin:0;
       font-family:$font-header;
       font-size: 16px;
       min-width: 300px;
       background-color: white;
       letter-spacing: 1px;
+      position: fixed;
     }
      #page-container {
       min-height:100%;
@@ -32,10 +33,9 @@ $font-header: 'Montserrat', sans-serif;
   }
   
   .main-logo {
-    padding-right: 70px;
     float: left;
     margin: 45px;
-    max-width: 275px;
+    max-width: 205px;
   }
 
 
@@ -60,15 +60,16 @@ $font-header: 'Montserrat', sans-serif;
     display: block;
     text-decoration: none;
     letter-spacing: 1px;
+    transition:ease-out 0.3s;
   }
 
   .contact-link
   {
-    padding: 25px 0px 20px 0;
+    padding: 10px 0px 10px 0;
     display: block;
     color: #333;
     text-decoration: none;
-    font-size:18px;
+    font-size:16px;
     text-transform: uppercase;
     font-weight: bold;
   }
@@ -82,16 +83,34 @@ $font-header: 'Montserrat', sans-serif;
     letter-spacing: 1px;
 }
 
+.film {
+  font-size: 16px;    
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 7.5px 0;
+}
+
 .menu button {
   padding: 8px 0px 8px 0;
   color: #333;
 }
 
  .insta {
-    font-size:28px;
-    padding-left:2px;
+    font-size:25px;
+    padding-top: 10px;
     font-weight: bold;
     color: #333;
+    transition:ease-out 0.2s;
+  }
+
+  .linked {
+    margin:0 15px;
+  }
+
+  .social-media{
+    display: flex;
   }
   
   #myLinks {
@@ -130,6 +149,7 @@ $font-header: 'Montserrat', sans-serif;
     font-size: 16px;
     padding: 10px 0px 10px 2px;
     letter-spacing: 1px;
+    transition:ease-out 0.2s;
   }
 
   .menu button {
@@ -268,7 +288,6 @@ $font-header: 'Montserrat', sans-serif;
   .menu a {
     justify-content: center;
     display: block;
-    margin: 0px;
     text-decoration:none;
    
   }
@@ -438,12 +457,11 @@ $font-header: 'Montserrat', sans-serif;
 
     .insta {
       font-size:28px;
-      padding:0 0 25px 0;
       color: #333;
     
      }
   .contact-link { 
-    padding: 25px 0 15px 0;
+    padding: 7.5px 0 7.5px 0;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
@@ -451,7 +469,10 @@ $font-header: 'Montserrat', sans-serif;
     font-size: 18px;
 
   }
-
+.social-media {
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
   .dropdown .dropbtn {
     margin: 0 auto;
     margin-top: 50px;
