@@ -299,56 +299,56 @@ body, html {
 
 #toggle:checked + .menu .fade-one {
   opacity: 0;
-  -webkit-animation: fadeitin .5s ease-in-out .1s forwards;
-          animation: fadeitin .5s ease-in-out .1s forwards;
+  -webkit-animation: fadeitin .3s ease-in-out .1s forwards;
+          animation: fadeitin .3s ease-in-out .1s forwards;
 }
 
 #toggle:checked + .menu .fade-two {
   opacity: 0;
-  -webkit-animation: fadeitin .5s ease-in-out .2s forwards;
-          animation: fadeitin .5s ease-in-out .2s forwards;
+  -webkit-animation: fadeitin .3s ease-in-out .2s forwards;
+          animation: fadeitin .3s ease-in-out .2s forwards;
 }
 
 #toggle:checked + .menu .fade-three {
   opacity: 0;
-  -webkit-animation: fadeitin .5s ease-in-out .3s forwards;
-          animation: fadeitin .5s ease-in-out .3s forwards;
+  -webkit-animation: fadeitin .3s ease-in-out .3s forwards;
+          animation: fadeitin .3s ease-in-out .3s forwards;
 }
 
 #toggle:checked + .menu .fade-four {
   opacity: 0;
-  -webkit-animation: fadeitin .5s ease-in-out .4s forwards;
-          animation: fadeitin .5s ease-in-out .4s forwards;
+  -webkit-animation: fadeitin .3s ease-in-out .4s forwards;
+          animation: fadeitin .3s ease-in-out .4s forwards;
 }
 
 #toggle:checked + .menu .fade-five {
   opacity: 0;
-  -webkit-animation: fadeitin .5s ease-in-out .5s forwards;
-          animation: fadeitin .5s ease-in-out .5s forwards;
+  -webkit-animation: fadeitin .3s ease-in-out .5s forwards;
+          animation: fadeitin .3s ease-in-out .5s forwards;
 }
 
 #toggle:checked + .menu .fade-six {
   opacity: 0;
-  -webkit-animation: fadeitin .5s ease-in-out .6s forwards;
-          animation: fadeitin .5s ease-in-out .6s forwards;
+  -webkit-animation: fadeitin .3s ease-in-out .6s forwards;
+          animation: fadeitin .3s ease-in-out .6s forwards;
 }
 
 #toggle:checked + .menu .fade-seven {
   opacity: 0;
-  -webkit-animation: fadeitin .5s ease-in-out .7s forwards;
-          animation: fadeitin .5s ease-in-out .7s forwards;
+  -webkit-animation: fadeitin .3s ease-in-out .7s forwards;
+          animation: fadeitin .3s ease-in-out .7s forwards;
 }
 
 #toggle:checked + .menu .fade-eight {
   opacity: 0;
-  -webkit-animation: fadeitin .5s ease-in-out .8s forwards;
-          animation: fadeitin .5s ease-in-out .8s forwards;
+  -webkit-animation: fadeitin .3s ease-in-out .8s forwards;
+          animation: fadeitin .3s ease-in-out .8s forwards;
 }
 
 #toggle:checked + .menu .fade-nine {
   opacity: 0;
-  -webkit-animation: fadeitin .5s ease-in-out .9s forwards;
-          animation: fadeitin .5s ease-in-out .9s forwards;
+  -webkit-animation: fadeitin .3s ease-in-out .9s forwards;
+          animation: fadeitin .3s ease-in-out .9s forwards;
 }
 
 @-webkit-keyframes fadeitin {
@@ -406,64 +406,64 @@ body, html {
 #toggle:not(checked) + .menu {
   height: 0;
   opacity: 0;
-  -webkit-transition: all .8s;
-  transition: all .8s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
   -webkit-transition-delay: 1s;
           transition-delay: 1s;
 }
 
 #toggle:not(checked) + .menu .fade-nine {
   opacity: 1;
-  -webkit-animation: fadeitout .3s ease-in-out .1s forwards;
-          animation: fadeitout .3s ease-in-out .1s forwards;
+  -webkit-animation: fadeitout .2s ease-in-out .1s forwards;
+          animation: fadeitout .2s ease-in-out .1s forwards;
 }
 
 #toggle:not(checked) + .menu .fade-eight {
   opacity: 1;
-  -webkit-animation: fadeitout .3s ease-in-out .2s forwards;
-          animation: fadeitout .3s ease-in-out .2s forwards;
+  -webkit-animation: fadeitout .2s ease-in-out .2s forwards;
+          animation: fadeitout .2s ease-in-out .2s forwards;
 }
 
 #toggle:not(checked) + .menu .fade-seven {
   opacity: 1;
-  -webkit-animation: fadeitout .3s ease-in-out .3s forwards;
-          animation: fadeitout .3s ease-in-out .3s forwards;
+  -webkit-animation: fadeitout .2s ease-in-out .3s forwards;
+          animation: fadeitout .2s ease-in-out .3s forwards;
 }
 
 #toggle:not(checked) + .menu .fade-six {
   opacity: 1;
-  -webkit-animation: fadeitout .3s ease-in-out .4s forwards;
-          animation: fadeitout .3s ease-in-out .4s forwards;
+  -webkit-animation: fadeitout .2s ease-in-out .4s forwards;
+          animation: fadeitout .2s ease-in-out .4s forwards;
 }
 
 #toggle:not(checked) + .menu .fade-five {
   opacity: 1;
-  -webkit-animation: fadeitout .3s ease-in-out .5s forwards;
-          animation: fadeitout .3s ease-in-out .5s forwards;
+  -webkit-animation: fadeitout .2s ease-in-out .5s forwards;
+          animation: fadeitout .2s ease-in-out .5s forwards;
 }
 
 #toggle:not(checked) + .menu .fade-four {
   opacity: 1;
-  -webkit-animation: fadeitout .3s ease-in-out .6s forwards;
-          animation: fadeitout .3s ease-in-out .6s forwards;
+  -webkit-animation: fadeitout .2s ease-in-out .6s forwards;
+          animation: fadeitout .2s ease-in-out .6s forwards;
 }
 
 #toggle:not(checked) + .menu .fade-three {
   opacity: 1;
-  -webkit-animation: fadeitout .3s ease-in-out .7s forwards;
-          animation: fadeitout .3s ease-in-out .7s forwards;
+  -webkit-animation: fadeitout .2s ease-in-out .7s forwards;
+          animation: fadeitout .2s ease-in-out .7s forwards;
 }
 
 #toggle:not(checked) + .menu .fade-two {
   opacity: 1;
-  -webkit-animation: fadeitout .3s ease-in-out .8s forwards;
-          animation: fadeitout .3s ease-in-out .8s forwards;
+  -webkit-animation: fadeitout .2s ease-in-out .8s forwards;
+          animation: fadeitout .2s ease-in-out .8s forwards;
 }
 
 #toggle:not(checked) + .menu .fade-one {
   opacity: 1;
-  -webkit-animation: fadeitout .3s ease-in-out .9s forwards;
-          animation: fadeitout .3s ease-in-out .9s forwards;
+  -webkit-animation: fadeitout .2s ease-in-out .9s forwards;
+          animation: fadeitout .2s ease-in-out .9s forwards;
 }
 
 /*-----------CONTENT -------------*/

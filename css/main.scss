@@ -306,39 +306,39 @@ $font-header: 'Montserrat', sans-serif;
     transition: opacity .5s;
     .fade-one {
       opacity: 0;
-      animation: fadeitin .5s ease-in-out .1s forwards;
+      animation: fadeitin .3s ease-in-out .1s forwards;
     }
     .fade-two {
       opacity: 0;
-      animation: fadeitin .5s ease-in-out .2s forwards;
+      animation: fadeitin .3s ease-in-out .2s forwards;
     }
     .fade-three {
       opacity: 0;
-      animation: fadeitin .5s ease-in-out .3s forwards;
+      animation: fadeitin .3s ease-in-out .3s forwards;
     }
     .fade-four {
       opacity: 0;
-      animation: fadeitin .5s ease-in-out .4s forwards;
+      animation: fadeitin .3s ease-in-out .4s forwards;
     }
     .fade-five {
       opacity: 0;
-      animation: fadeitin .5s ease-in-out .5s forwards;
+      animation: fadeitin .3s ease-in-out .5s forwards;
     }
     .fade-six {
       opacity: 0;
-      animation: fadeitin .5s ease-in-out .6s forwards;
+      animation: fadeitin .3s ease-in-out .6s forwards;
     }
     .fade-seven {
       opacity: 0;
-      animation: fadeitin .5s ease-in-out .7s forwards;
+      animation: fadeitin .3s ease-in-out .7s forwards;
     }
     .fade-eight {
       opacity: 0;
-      animation: fadeitin .5s ease-in-out .8s forwards;
+      animation: fadeitin .3s ease-in-out .8s forwards;
     }
     .fade-nine {
       opacity: 0;
-      animation: fadeitin .5s ease-in-out .9s forwards;
+      animation: fadeitin .3s ease-in-out .9s forwards;
     }
   }
 
@@ -356,44 +356,44 @@ $font-header: 'Montserrat', sans-serif;
    
     .fade-nine {
       opacity: 1;
-      animation: fadeitout .3s ease-in-out .1s forwards;
+      animation: fadeitout .2s ease-in-out .1s forwards;
     }
     .fade-eight {
       opacity: 1;
-      animation: fadeitout .3s ease-in-out .2s forwards;
+      animation: fadeitout .2s ease-in-out .2s forwards;
     }
     .fade-seven {
       opacity: 1;
-      animation: fadeitout .3s ease-in-out .3s forwards;
+      animation: fadeitout .2s ease-in-out .3s forwards;
     }
     .fade-six {
       opacity: 1;
-      animation: fadeitout .3s ease-in-out .4s forwards;
+      animation: fadeitout .2s ease-in-out .4s forwards;
     }
     .fade-five {
       opacity: 1;
-      animation: fadeitout .3s ease-in-out .5s forwards;
+      animation: fadeitout .2s ease-in-out .5s forwards;
     }
     .fade-four {
       opacity: 1;
-      animation: fadeitout .3s ease-in-out .6s forwards;
+      animation: fadeitout .2s ease-in-out .6s forwards;
     }
     .fade-three {
       opacity: 1;
-      animation: fadeitout .3s ease-in-out .7s forwards;
+      animation: fadeitout .2s ease-in-out .7s forwards;
     }
     .fade-two {
       opacity: 1;
-      animation: fadeitout .3s ease-in-out .8s forwards;
+      animation: fadeitout .2s ease-in-out .8s forwards;
     }
     .fade-one {
       opacity: 1;
-      animation: fadeitout .3s ease-in-out .9s forwards;
+      animation: fadeitout .2s ease-in-out .9s forwards;
     }
 
     height: 0;
     opacity: 0;
-    transition: all .8s;
+    transition: all .5s;
     transition-delay: 1s;
   
   }
