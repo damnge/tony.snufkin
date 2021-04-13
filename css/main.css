@@ -11,13 +11,41 @@ body, html {
   min-width: 300px;
   background-color: white;
   letter-spacing: 1px;
-  position: relative;
-  max-height: 100%;
+  position: fixed;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  background-color: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #333;
+}
+
+::-moz-selection {
+  background: #333;
+  color: white;
+}
+
+::selection {
+  background: #333;
+  color: white;
 }
 
 #page-container {
-  max-height: 100%;
   position: relative;
+}
+
+[data-src] {
+  min-width: 50px;
+  min-height: 50px;
 }
 
 /*-----------HEADER/NAVBAR-----------*/

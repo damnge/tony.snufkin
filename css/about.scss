@@ -9,14 +9,36 @@ $font-header: 'Montserrat', sans-serif;
 
   html, body {
  height: 100%;
- position: relative;
+ position: fixed;
 }
+
+::-webkit-scrollbar {
+    width: 4px;
+    background-color:transparent;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+   background-color:transparent;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #333;
+  }
+
+  ::-moz-selection { background: #333;
+color: white; }
+::selection { background: #333;
+color: white; }
+
 body {
       margin:0;
       font-family:$font-header;
       font-size: 16px;
       background-color:#fefefe;
       letter-spacing: 1.5px;
+      position: fixed;
     }
 #page-container {
     min-height: 100vh; /* will cover the 100% of viewport */
@@ -192,7 +214,7 @@ body {
           #email { 
             font-size: 16px;
             text-decoration: none;
-            color::#333;
+            color:#333;
             transition: ease-in 0.3s;
         }
       
