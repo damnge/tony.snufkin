@@ -63,19 +63,44 @@ body {
     margin-left: 100px;
 }
 
-
-.back {
+.back-div {
     display: inline-block;
     cursor: pointer;
     position: absolute;
-    right: 25px;
-    top: 21px;
-    text-decoration:none;
-    color: #333;
-    font-size: 20px;
-    text-transform: uppercase;
+    right:0;
+    margin-right: 100px;
+    top: 45px;
+
 }
 
+.back {
+    text-decoration: none;
+    color: #AFB1B0;
+    transition: 0.5s;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+
+    .back:after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 0;
+        background: transparent;
+        transition: width .5s ease, background-color .5s ease;
+    }
+
+    .back:hover:after {
+        width: 100%;
+        background: #333;
+        }
+        .back:hover{
+          color: #333;
+          transition: 0.5s;
+        }
+ 
 
     #links a:after {
         content: '';
@@ -270,6 +295,11 @@ body {
         .logo {
             margin: 35px;
         }
+
+        .back-div {
+            display: none;
+          }
+        
         #about-me {
             flex-direction: column;
             overflow: hidden;

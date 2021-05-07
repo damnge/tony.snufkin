@@ -14,40 +14,64 @@ $(document).ready(function(){
     window.onbeforeunload = function () {
         window.scrollTo(0, 0);
       }
-  
-    // const images = document.querySelectorAll("[data-src]");
 
-    // function preloadImage (img) {
-    //     const src = img.getAttribute ("data-src");
-    //     if (!src) {
-    //         return;
-    //     }
+//       document.addEventListener("DOMContentLoaded", () => {
+
+//         const images = Array.from(document.querySelectorAll('.lazy-img'));
+        
+// if ('IntersectionObserver' in window) {
+//     const imageObserver = new IntersectionObserver((entries, observer) => {
+//         entries.forEach(entry => {
+//             if (entry.isIntersecting) {
+//                 const image = entry.target;
+
+//                 image.src = image.dataset.src;
+//                 image.onload = () => image.previousElementSibling.remove();
+
+//                 imageObserver.unobserve(image);
+//             }
+//         });
+//     });
+
+//     images.forEach(img => imageObserver.observe(img));
+// }  
+//       }
+      
     
-    //     img.src = src;
-    // } 
+
+    const images = document.querySelectorAll("[data-src]");
+
+    function preloadImage (img) {
+        const src = img.getAttribute ("data-src");
+        if (!src) {
+            return;
+        }
     
-    // const imgOptions = {
-    //     threshold: 0,
-    //     rootMargin: "0px 0px 300px 0px"
-    // };
+        img.src = src;
+    } 
     
-    // const imgObserver = new IntersectionObserver((entries, imgObserver) => {
-    //     entries.forEach(entry => {
-    //         if (!entry.isIntersecting) {
-    //             return;
-    //         } else {
-    //             preloadImage(entry.target);
-    //             imgObserver.unobserve(entry.target);
-    //         }
-    //     })
+    const imgOptions = {
+        threshold: 1,
+        rootMargin: "0px 0px 0px 0px"
+    };
+    
+    const imgObserver = new IntersectionObserver((entries, imgObserver) => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                return;
+            } else {
+                preloadImage(entry.target);
+                imgObserver.unobserve(entry.target);
+            }
+        })
             
-    // }, imgOptions);
+    }, imgOptions);
     
-    // images.forEach(image => {
-    //     imgObserver.observe(image);
-    // });
+    images.forEach(image => {
+        imgObserver.observe(image);
+    });
 
-    
+
 // ------- HAMBURGER --------
 
 
