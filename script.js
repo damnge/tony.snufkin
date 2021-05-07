@@ -15,27 +15,6 @@ $(document).ready(function(){
         window.scrollTo(0, 0);
       }
 
-//       document.addEventListener("DOMContentLoaded", () => {
-
-//         const images = Array.from(document.querySelectorAll('.lazy-img'));
-        
-// if ('IntersectionObserver' in window) {
-//     const imageObserver = new IntersectionObserver((entries, observer) => {
-//         entries.forEach(entry => {
-//             if (entry.isIntersecting) {
-//                 const image = entry.target;
-
-//                 image.src = image.dataset.src;
-//                 image.onload = () => image.previousElementSibling.remove();
-
-//                 imageObserver.unobserve(image);
-//             }
-//         });
-//     });
-
-//     images.forEach(img => imageObserver.observe(img));
-// }  
-//       }
       
     
 
@@ -51,7 +30,7 @@ $(document).ready(function(){
     } 
     
     const imgOptions = {
-        threshold: 1,
+        threshold: 0,
         rootMargin: "0px 0px 0px 0px"
     };
     
