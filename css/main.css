@@ -360,7 +360,7 @@ img { cursor: pointer; }
   position: fixed;
   z-index: 20;
   inset: 0;
-  overflow: auto;
+  overflow: hidden;
   background-color: var(--color-light);
   padding-top: 28px;
 }
