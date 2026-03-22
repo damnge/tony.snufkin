@@ -144,13 +144,36 @@ function plusSlides(n)   { showSlides(slideIndex += n); }
 function currentSlide(n) { showSlides(slideIndex  = n); }
 
 /* =========================================================
-   8. ARROW-KEY NAVIGATION
+   8. ARROW-KEY NAVIGATION  (only while modal is open)
    ========================================================= */
 
 document.addEventListener('keydown', function (e) {
+  var modal = document.getElementById('myModal');
+  if (!modal || modal.style.display !== 'block') return;
   switch (e.key) {
     case 'ArrowLeft':  plusSlides(-1); break;
     case 'ArrowRight': plusSlides(1);  break;
     case 'Escape':     closeModal();   break;
   }
 });
+
+/* =========================================================
+   9. TOUCH SWIPE NAVIGATION  (mobile)
+   ========================================================= */
+
+(function () {
+  var modal = document.getElementById('myModal');
+  if (!modal) return;
+
+  var touchStartX = 0;
+
+  modal.addEventListener('touchstart', function (e) {
+    touchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+
+  modal.addEventListener('touchend', function (e) {
+    var diff = touchStartX - e.changedTouches[0].screenX;
+    if (Math.abs(diff) < 50) return; // ignore taps / tiny drags
+    plusSlides(diff > 0 ? 1 : -1);   // swipe left → next, swipe right → prev
+  }, { passive: true });
+}());

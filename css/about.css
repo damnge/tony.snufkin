@@ -9,10 +9,15 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
-html, body {
-  height: 100%; margin: 0; position: fixed;
+html {
+  height: 100%; margin: 0;
+}
+
+body {
+  margin: 0; width: 100%; min-height: 100%;
   font-family: var(--font-main); font-size: 16px;
   background-color: var(--color-light); letter-spacing: 1.5px;
+  overflow-y: auto;
 }
 
 ::-webkit-scrollbar { width: 4px; background-color: transparent; }
@@ -33,7 +38,7 @@ html, body {
 .back:hover::after { width: 100%; background: var(--color-dark); }
 .back:hover { color: var(--color-dark); }
 
-#about-me { display: flex; justify-content: space-between; overflow: hidden; max-width: 100%; width: 100vw; }
+#about-me { display: flex; justify-content: space-between; max-width: 100%; width: 100vw; }
 
 article { margin-left: 100px; margin-top: 50px; }
 
