@@ -1,214 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Photography portfolio website">
-<meta name="keywords" content="Street Photography, Film Photography, Documentary">
-<meta name="author" content="Damian Grela">
-<meta property="og:title" content="Damian Grela - Photographer" />
-<meta property="og:description" content="I’m a photographer with a broad interest in anything associated with visual art. If you wish to collaborate, feel free to contact me."/>
-<meta property="og:image" content="https://raw.githubusercontent.com/damnge/tony.snufkin/master/og.jpg" />
-<title>Damian Grela</title>
-<link rel="stylesheet" type="text/css" href="css/main.css">
-<link rel="stylesheet" type="text/css" href="css/modal.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-<script src="https://kit.fontawesome.com/c5eb38d5ce.js" crossorigin="anonymous"></script>
-<link rel="icon" type="image/png" href="ts.png">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Photography portfolio — Damian Grela">
+  <meta name="author" content="Damian Grela">
+  <meta property="og:title" content="Damian Grela - Photographer">
+  <meta property="og:image" content="https://raw.githubusercontent.com/damnge/tony.snufkin/master/og.jpg">
+  <title>Damian Grela — Ukraine</title>
+  <link rel="icon" type="image/png" href="ts.png">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+  <script src="https://kit.fontawesome.com/c5eb38d5ce.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  
-  <section id="page-container">
-    <nav class="navbar">
-      <a href="index">
-        <img src="LOGO.svg" href alt="logo" class="main-logo animate__animated animate__fadeIn">
-      </a>
-  
-      <label class="nav" for="toggle">
-        <div id="nav-icon3">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-        <input type="checkbox" id="toggle">
-        <div class="menu dropdown-content">
-        <p class="portfolio fade-one fading">Portfolio</p>
-          <a href="index"><button class="fade-two fading">Street</button></a>
-          <a href="iceland"><button class="fade-three fading">ICELAND</button></a>
-          <a href="australia"><button class="fade-four fading">AUSTRALIA</button></a>
-          <a href="ukraine"><button class="fade-five fading"  style="color:rgba(51, 51, 51, 0.85); font-weight:500;">UKRAINE</button></a>
-          <a href="reportage"><button class="fade-six fading">Reportage</button></a>
-          <a href="about" class="contact-link fade-seven fading">About</a>
-        <a href="contact" class="contact-link fade-eight fading">Contact</a>
-        <div class="social-media fade-nine fading">
-          <a target="_blank" class="insta" href="https://www.instagram.com/damgrela/"><i class="fab fa-instagram"></i></a>
-          <a target="_blank" class="insta linked" href="https://www.linkedin.com/in/damian-grela-2405a31b8/" ><i class="fab fa-linkedin-in"></i></a>
-          <a target="_blank" class="insta" href="https://dribbble.com/damng" ><i class="fab fa-dribbble"></i></a>
-         </div>
-        </div>
-      </label>
-  
-  </nav>
-  
-  <nav class="sidebar" id="myTopnav">
-   <div id="myLinks">
-    
-      <button class="dropbtn-portfolio">Portfolio</button>
-      <div class="dropdown-content">
-        <a href="index"><button>Street</button></a>
-        <a><button id="myBtn3" class="my-analog">Film <i class="fas fa-angle-down" style="font-size:12px;"></i></button></a>
-        <div class="dropdown-content analog-drop animate__animated animate__fadeInLeft animate__delay-0.1s">
-          <a href="iceland"><button >ICELAND</button></a>
-          <a href="australia"><button>AUSTRALIA</button></a>
-          <a href="ukraine"><button style="color:rgba(51, 51, 51, 0.897); font-weight:500;">UKRAINE</button></a>
-        </div>
-        <a href="reportage"><button>Reportage</button></a>
-      </div>
-  <a href="about" class="contact-link">About</a>
-  <a href="contact" class="contact-link">Contact</a>
-  <div class="social-media">
-    <a target="_blank" class="insta" href="https://www.instagram.com/damgrela/"><i class="fab fa-instagram"></i></a>
-    <a target="_blank" class="insta linked" href="https://www.linkedin.com/in/damian-grela-2405a31b8/" ><i class="fab fa-linkedin-in"></i></a>
-    <a target="_blank" class="insta" href="https://dribbble.com/damng" ><i class="fab fa-dribbble"></i></a>
-   </div>
-  
-  </div>
-    
-    </nav>
-    
-
+<section id="page-container">
+  <script src="js/nav.js"></script>
   <div class="sign"><p>©Damian Grela 2025</p></div>
-
-  <section id="content">  
-  
+  <section id="content">
     <div id="gallery-container">
-         
-  
-  <div class="row">  <!-- this gallery is made with flex and 4 rows -->
-
-  <!-- ----UKRAINE---- -->
-  <!-- ---- 1 COLUMN ----- -->
-
-  <div class="column-landscape grid">
-    <img src="dot.jpg" data-src="img/u1.jpg" class="lazy-img" onclick="openModal();currentSlide(1)">
-    <img src="dot.jpg" data-src="img/u3.jpg" class="lazy-img" onclick="openModal();currentSlide(3)">
-    <img src="dot.jpg" data-src="img/u5.jpg" class="lazy-img" onclick="openModal();currentSlide(5)">
-    <img src="dot.jpg" data-src="img/u7.jpg" class="lazy-img" onclick="openModal();currentSlide(7)">
-    <img src="dot.jpg" data-src="img/u9.jpg" class="lazy-img" onclick="openModal();currentSlide(9)">
-    <img src="dot.jpg" data-src="img/u11.jpg" class="lazy-img" onclick="openModal();currentSlide(11)">
-    <img src="dot.jpg" data-src="img/u13.jpg" class="lazy-img" onclick="openModal();currentSlide(13)">
-    <img src="dot.jpg" data-src="img/u15.jpg" class="lazy-img" onclick="openModal();currentSlide(15)">
-  </div> 
-
-  <!-- ---- 2 COLUMN ----- -->
-
-  <div class="column-landscape grid">
-    <img src="dot.jpg" data-src="img/u2.jpg" class="lazy-img" onclick="openModal();currentSlide(2)">
-    <img src="dot.jpg" data-src="img/u4.jpg" class="lazy-img" onclick="openModal();currentSlide(4)">
-    <img src="dot.jpg" data-src="img/u6.jpg" class="lazy-img" onclick="openModal();currentSlide(6)">
-    <img src="dot.jpg" data-src="img/u8.jpg" class="lazy-img" onclick="openModal();currentSlide(8)">
-    <img src="dot.jpg" data-src="img/u10-min.jpg" class="lazy-img" onclick="openModal();currentSlide(10)">
-    <img src="dot.jpg" data-src="img/u12.jpg" class="lazy-img" onclick="openModal();currentSlide(12)">
-    <img src="dot.jpg" data-src="img/u14.jpg" class="lazy-img" onclick="openModal();currentSlide(14)">
-    <img src="dot.jpg" data-src="img/u16.jpg" class="lazy-img" onclick="openModal();currentSlide(16)">
-  </div> 
-
-
-
-   
-  </div>    <!-- <---- closing src="dot.jpg" div of the row -->
-
-  
-  </div>       <!-- --------- closing src="dot.jpg" div of gallery-container -->
-
-</section> <!-- closing content div -->
-
-  
-  <footer class="footer">
-	<div class="info">
-  <p class="copy">©Damian Grela 2025</p>
-  </div>
-  </footer>
-
+      <div class="row">
+        <div class="column-landscape grid">
+          <img class="lazy-img" src="dot.jpg" data-src="img/u1.jpg"  data-orient="landscape">
+          <img class="lazy-img" src="dot.jpg" data-src="img/u3.jpg"  data-orient="landscape">
+          <img class="lazy-img" src="dot.jpg" data-src="img/u5.jpg"  data-orient="landscape">
+          <img class="lazy-img" src="dot.jpg" data-src="img/u7.jpg"  data-orient="landscape">
+          <img class="lazy-img" src="dot.jpg" data-src="img/u9.jpg"  data-orient="landscape">
+          <img class="lazy-img" src="dot.jpg" data-src="img/u11.jpg" data-orient="landscape">
+          <img class="lazy-img" src="dot.jpg" data-src="img/u13.jpg" data-orient="landscape">
+          <img class="lazy-img" src="dot.jpg" data-src="img/u15.jpg" data-orient="landscape">
+        </div>
+        <div class="column-landscape grid">
+          <img class="lazy-img" src="dot.jpg" data-src="img/u2.jpg"      data-orient="landscape">
+          <img class="lazy-img" src="dot.jpg" data-src="img/u4.jpg"      data-orient="landscape">
+          <img class="lazy-img" src="dot.jpg" data-src="img/u6.jpg"      data-orient="landscape">
+          <img class="lazy-img" src="dot.jpg" data-src="img/u8.jpg"      data-orient="landscape">
+          <img class="lazy-img" src="dot.jpg" data-src="img/u10-min.jpg" data-orient="landscape">
+          <img class="lazy-img" src="dot.jpg" data-src="img/u12.jpg"     data-orient="landscape">
+          <img class="lazy-img" src="dot.jpg" data-src="img/u14.jpg"     data-orient="landscape">
+          <img class="lazy-img" src="dot.jpg" data-src="img/u16.jpg"     data-orient="landscape">
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer"><div class="info"><p class="copy">©Damian Grela 2025</p></div></footer>
 </section>
-
-
-
 <div id="myModal" class="modal">
   <a class="close cursor" onclick="closeModal()">CLOSE</a>
-  <div class="modal-content">
-<!-- -----UKRAINE----- -->
-
-<div class="mySlides landscape">
-  <img class="lazy-img" src="dot.jpg" data-src="img/u1.jpg">
+  <div class="modal-content" id="modal-slides">
+    <div class="slider"><a class="prev" onclick="plusSlides(-1)">Prev</a><p>/</p><a class="next" onclick="plusSlides(1)">Next</a></div>
+  </div>
 </div>
-<div class="mySlides landscape">
-  <img class="lazy-img" src="dot.jpg" data-src="img/u2.jpg">
-</div>
-<div class="mySlides landscape">
-  <img class="lazy-img" src="dot.jpg" data-src="img/u3.jpg">
-</div>
-<div class="mySlides landscape">
-  <img class="lazy-img" src="dot.jpg" data-src="img/u4.jpg">
-</div>
-<div class="mySlides landscape">
-  <img class="lazy-img" src="dot.jpg" data-src="img/u5.jpg">
-</div>
-<div class="mySlides landscape">
-  <img class="lazy-img" src="dot.jpg" data-src="img/u6.jpg">
-</div>
-<div class="mySlides landscape">
-  <img class="lazy-img" src="dot.jpg" data-src="img/u7.jpg">
-</div>
-<div class="mySlides landscape">
-  <img class="lazy-img" src="dot.jpg" data-src="img/u8.jpg">
-</div>
-<div class="mySlides landscape">
-  <img class="lazy-img" src="dot.jpg" data-src="img/u9.jpg">
-</div>
-<div class="mySlides landscape">
-  <img class="lazy-img" src="dot.jpg" data-src="img/u10-min.jpg">
-</div>
-<div class="mySlides landscape">
-  <img class="lazy-img" src="dot.jpg" data-src="img/u11.jpg">
-</div>
-<div class="mySlides landscape">
-  <img class="lazy-img" src="dot.jpg" data-src="img/u12.jpg">
-</div>
-<div class="mySlides landscape">
-  <img class="lazy-img" src="dot.jpg" data-src="img/u13.jpg">
-</div>
-<div class="mySlides landscape">
-  <img class="lazy-img" src="dot.jpg" data-src="img/u14.jpg">
-</div>
-<div class="mySlides landscape">
-  <img class="lazy-img" src="dot.jpg" data-src="img/u15.jpg">
-</div>
-<div class="mySlides landscape">
-  <img class="lazy-img" src="dot.jpg" data-src="img/u16.jpg">
-</div>
-    <div class="slider">
-    <a class="prev" onclick="plusSlides(-1)" onkeypress(37)="">Prev</a>
-    <p>/</p>
-    <a class="next" onclick="plusSlides(1)">Next</a>
-    </div>
-
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-
-    </div>
-</div>
-
-    <div class="loader" id="loader">
-      <img src="loader2.svg" alt="loading">
-    </div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/js/lightbox.min.js"></script>
-<script src="script.js"></script>
-<script src="javascripts/arrow-keys.js"></script>
-
+<div class="loader" id="loader"><img src="loader2.svg" alt="loading"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

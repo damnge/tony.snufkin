@@ -1,70 +1,50 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Photography portfolio website">
-		<meta name="keywords" content="Street Photography, Film Photography, Documentary">
-		<meta name="author" content="Damian Grela">
-		<meta property="og:title" content="Damian Grela - Photographer" />
-		<meta property="og:description" content="I’m a photographer with a broad interest in anything associated with visual art. If you wish to collaborate, feel free to contact me."/>
-		<meta property="og:image" content="https://raw.githubusercontent.com/damnge/tony.snufkin/master/og.jpg" />
-		<title>Damian Grela</title>
-		<link rel="icon" type="image/png" href="ts.png">
-		<link rel="stylesheet" href="css/stylecontact.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-	<script src="https://kit.fontawesome.com/c5eb38d5ce.js" crossorigin="anonymous"></script>
-	  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Photography portfolio — Damian Grela">
+  <meta name="author" content="Damian Grela">
+  <meta property="og:title" content="Damian Grela - Photographer">
+  <meta property="og:image" content="https://raw.githubusercontent.com/damnge/tony.snufkin/master/og.jpg">
+  <title>Damian Grela — Contact</title>
+  <link rel="icon" type="image/png" href="ts.png">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+  <script src="https://kit.fontawesome.com/c5eb38d5ce.js" crossorigin="anonymous"></script>
+</head>
 <body>
-	<section class="page-container" id="page-container">
-		<header class="header" id="header">
-			<a href="index">
-				<img  class="logo animate__animated animate__fadeIn" src="LOGO.svg">
-			</a>
-			<div class="back"> 
-				<a href="index">
-					Back
-				</a>
-			</div>
-		</header>
-		<section class="form-container" id="form-container">
-		<h1 class="contact-title">let's get in touch.</h1>
-	
-		
-		<form class="contact-form" name="myForm" action="https://formspree.io/f/moqpzlzj" method="POST" id="my-form" onsubmit="validate(); validateEmail();">
-			<label for="name">Name</label>
-			<input type="text" name="name" id="name" class="input-name" placeholder="">
-			<label for="mail">Email</label>
-			<input type="email" name="mail" id="Email" placeholder="">
-			<label for="message">Message</label>
-			<textarea name="message" id="message" placeholder=""></textarea>
-			<div id="status" class="animate__animated animate__fadeIn animate__delay-2s"></div>
-			<div class="center-btn">
-			<button class="btn-send"  type="submit" value="Send" name="submit">Send</button>
-		</div>
-		</form>
-	
-	</section>
-		
-	<footer class="footer">
-		<div class="social-media">
-		<a target="_blank" class="insta" href="https://www.instagram.com/damgrela/"><i class="fab fa-instagram"></i></a>
-        <a target="_blank" class="insta" href="https://www.linkedin.com/in/damian-grela-2405a31b8/" ><i class="fab fa-linkedin-in"></i></a>
-        <a target="_blank" class="insta" href="https://dribbble.com/damng" ><i class="fab fa-dribbble"></i></a>
-		</div>
-		<p><a href="mailto:dam.grela@gmail.com" id="email">dam.grela@gmail.com</a></p>
-		<p class="sign">©Damian Grela 2025</p>
-			</footer>
-	
-
-
-<div class="loader" id="loader">
-      <img src="loader2.svg" alt="loading">
-	</div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"> </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-<script src="script.js"></script>
-<script src="javascripts/form-sub.js"></script>
+<section class="page-container" id="page-container">
+  <header class="header" id="header">
+    <a href="index"><img class="logo animate__animated animate__fadeIn" src="LOGO.svg" alt="logo"></a>
+    <div class="back"><a href="index">Back</a></div>
+  </header>
+  <section class="form-container" id="form-container">
+    <h1 class="contact-title">let's get in touch.</h1>
+    <form class="contact-form" name="myForm" action="https://formspree.io/f/moqpzlzj" method="POST" id="my-form">
+      <label for="name">Name</label>
+      <input type="text"  name="name" id="name">
+      <label for="Email">Email</label>
+      <input type="email" name="mail" id="Email">
+      <label for="message">Message</label>
+      <textarea name="message" id="message"></textarea>
+      <div id="status" class="animate__animated animate__fadeIn animate__delay-2s"></div>
+      <div class="center-btn">
+        <button class="btn-send" type="submit">Send</button>
+      </div>
+    </form>
+  </section>
+</section>
+<footer class="footer">
+  <div class="social-media">
+    <a target="_blank" class="insta" href="https://www.instagram.com/damgrela/"><i class="fab fa-instagram"></i></a>
+    <a target="_blank" class="insta" href="https://www.linkedin.com/in/damian-grela-2405a31b8/"><i class="fab fa-linkedin-in"></i></a>
+    <a target="_blank" class="insta" href="https://dribbble.com/damng"><i class="fab fa-dribbble"></i></a>
+  </div>
+  <p><a href="mailto:dam.grela@gmail.com" id="email">dam.grela@gmail.com</a></p>
+  <p class="sign">©Damian Grela 2025</p>
+</footer>
+<div class="loader" id="loader"><img src="loader2.svg" alt="loading"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="js/contact.js"></script>
 </body>
 </html>
